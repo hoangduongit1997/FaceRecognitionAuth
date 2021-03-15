@@ -17,14 +17,12 @@ class Profile extends StatelessWidget {
         child: Column(
           children: [
             Text('This is your super amazing profile'),
-            RaisedButton(
+            ElevatedButton(
               child: Text('Logout'),
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                    builder: (context) => MyHomePage()
-                  ),
+                  MaterialPageRoute(builder: (context) => MyHomePage()),
                 );
               },
             )

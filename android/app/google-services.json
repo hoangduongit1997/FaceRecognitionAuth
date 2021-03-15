@@ -1,35 +1,49 @@
 {
   "project_info": {
-    "project_number": "908209109268",
-    "firebase_url": "https://facerecognitionauth.firebaseio.com",
-    "project_id": "facerecognitionauth",
-    "storage_bucket": "facerecognitionauth.appspot.com"
+    "project_number": "712161839843",
+    "project_id": "face-recognition-ea942",
+    "storage_bucket": "face-recognition-ea942.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:908209109268:android:22aa62a69fde9e6a0e6a01",
+        "mobilesdk_app_id": "1:712161839843:android:fcabbf99c040d0863653d6",
         "android_client_info": {
-          "package_name": "com.example.FaceNet"
+          "package_name": "com.hd.facenet"
         }
       },
       "oauth_client": [
         {
-          "client_id": "908209109268-8833dnentno68sbhh1q3sbd5k0epm8a3.apps.googleusercontent.com",
+          "client_id": "712161839843-5a35snf3iao3ioc4n7tnt3o3sh4uhve8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hd.facenet",
+            "certificate_hash": "bebac8eb0fb5261c097e5a49068d786b42941d45"
+          }
+        },
+        {
+          "client_id": "712161839843-ierc77u8mm402bhski54mksp42ofehem.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDzlmpvIAirzjtO_1TDasHocRk3UrTrkig"
+          "current_key": "AIzaSyCLFRaVBWO3OK7k9qBgeRYvuE90GA38fag"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "908209109268-8833dnentno68sbhh1q3sbd5k0epm8a3.apps.googleusercontent.com",
+              "client_id": "712161839843-ierc77u8mm402bhski54mksp42ofehem.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "712161839843-flj4s4027jp9ape6dnti49h150figqcm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.hd.facenet"
+              }
             }
           ]
         }

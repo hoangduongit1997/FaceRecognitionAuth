@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>712161839843-flj4s4027jp9ape6dnti49h150figqcm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.712161839843-flj4s4027jp9ape6dnti49h150figqcm</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>712161839843-996uhgq97bqduhc1bqbhf0npai7gq5rj.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAPq0Z84cMcoNevsYCgwe9BA9DnnmXi2XA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>712161839843</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hd.facenet</string>
+	<key>PROJECT_ID</key>
+	<string>face-recognition-ea942</string>
+	<key>STORAGE_BUCKET</key>
+	<string>face-recognition-ea942.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:712161839843:ios:113740d5a0e23bc33653d6</string>
+</dict>
+</plist>

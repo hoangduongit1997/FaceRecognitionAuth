@@ -1,4 +1,4 @@
-package com.example.FaceNet
+package com.hd.facenet
 
 import io.flutter.embedding.android.FlutterActivity
 

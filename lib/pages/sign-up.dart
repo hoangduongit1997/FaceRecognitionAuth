@@ -1,11 +1,11 @@
 import 'dart:async';
 import 'dart:io';
 import 'dart:math' as math;
-import 'package:FaceNetAuthentication/pages/widgets/FacePainter.dart';
-import 'package:FaceNetAuthentication/pages/widgets/auth-action-button.dart';
-import 'package:FaceNetAuthentication/services/camera.service.dart';
-import 'package:FaceNetAuthentication/services/facenet.service.dart';
-import 'package:FaceNetAuthentication/services/ml_vision_service.dart';
+import 'package:facenet/pages/widgets/FacePainter.dart';
+import 'package:facenet/pages/widgets/auth-action-button.dart';
+import 'package:facenet/services/camera.service.dart';
+import 'package:facenet/services/facenet.service.dart';
+import 'package:facenet/services/ml_vision_service.dart';
 import 'package:camera/camera.dart';
 import 'package:firebase_ml_vision/firebase_ml_vision.dart';
 import 'package:flutter/material.dart';
@@ -58,7 +58,8 @@ class SignUpState extends State<SignUp> {
 
   /// starts the camera & start framing faces
   _start() async {
-    _initializeControllerFuture = _cameraService.startService(widget.cameraDescription);
+    _initializeControllerFuture =
+        _cameraService.startService(widget.cameraDescription);
     await _initializeControllerFuture;
 
     setState(() {
@@ -73,16 +74,16 @@ class SignUpState extends State<SignUp> {
     print('onShot performed');
 
     if (faceDetected == null) {
-      
-      showDialog(
+      await showDialog(
           context: context,
-          child: AlertDialog(
-            content: Text('No face detected!'),
-          ));
+          builder: (context) => AlertDialog(
+                content: Text('No face detected!'),
+              ));
 
       return false;
     } else {
-      imagePath = join((await getTemporaryDirectory()).path, '${DateTime.now()}.png');
+      imagePath =
+          join((await getTemporaryDirectory()).path, '${DateTime.now()}.png');
 
       _saving = true;
 
@@ -168,13 +169,15 @@ class SignUpState extends State<SignUp> {
                         fit: BoxFit.fitHeight,
                         child: Container(
                           width: width,
-                          height: width / _cameraService.cameraController.value.aspectRatio,
+                          height: width /
+                              _cameraService.cameraController.value.aspectRatio,
                           child: Stack(
                             fit: StackFit.expand,
                             children: <Widget>[
                               CameraPreview(_cameraService.cameraController),
                               CustomPaint(
-                                painter: FacePainter(face: faceDetected, imageSize: imageSize),
+                                painter: FacePainter(
+                                    face: faceDetected, imageSize: imageSize),
                               ),
                             ],
                           ),
@@ -190,10 +193,12 @@ class SignUpState extends State<SignUp> {
           },
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-        floatingActionButton: !_bottomSheetVisible? AuthActionButton(
-          _initializeControllerFuture,
-          onPressed: onShot,
-          isLogin: false,
-        ): Container());
+        floatingActionButton: !_bottomSheetVisible
+            ? AuthActionButton(
+                _initializeControllerFuture,
+                onPressed: onShot,
+                isLogin: false,
+              )
+            : Container());
   }
 }
